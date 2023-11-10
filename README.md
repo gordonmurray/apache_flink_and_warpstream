@@ -53,8 +53,8 @@ CREATE TABLE products (
 ) WITH (
     'connector' = 'kafka',
     'topic' = 'products',
-    'properties.bootstrap.servers' = 'api-99fe8e81-f104-4d4d-842b-e03a7089c6f6.discovery.prod-z.us-east-1.warpstream.com:9092',
-    'properties.group.id' = 'warpstream-products',
+    'properties.bootstrap.servers' = 'api-000000000000000.warpstream.com:9092',
+    'properties.group.id' = 'warpstream',
     'scan.startup.mode' = 'earliest-offset',
     'format' = 'json',
     'json.fail-on-missing-field' = 'false',
